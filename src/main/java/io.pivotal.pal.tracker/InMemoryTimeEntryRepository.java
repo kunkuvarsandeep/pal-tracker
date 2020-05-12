@@ -4,7 +4,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
-@Repository
 public class InMemoryTimeEntryRepository implements TimeEntryRepository {
     Map<Long, TimeEntry> timeEntryList = new HashMap<>();
     private Long counter = 1L;
